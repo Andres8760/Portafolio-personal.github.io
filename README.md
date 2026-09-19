@@ -1,35 +1,23 @@
 # 👨‍💻 Andrés Felipe Gelpud Calvache
 
-¡Hola! Soy estudiante y desarrollador en formación apasionado por la tecnología, el desarrollo web, la programación y el aprendizaje continuo.
+¡Hola! soy Andres y soy desarrollador en formación de tecnología, el desarrollo web, la programación y el aprendizaje continuo.
 
 ---
 
 ## 🚀 Sobre mí
 
-- 🎓 Estudiante de [Tu carrera o programa]
+- 🎓 Estudiante de tecnologia en desarrollo
 - 💻 Interesado en Desarrollo Web, Java y Bases de Datos
 - 🌱 Actualmente aprendiendo nuevas tecnologías y buenas prácticas de programación
 - 🎯 Objetivo: Convertirme en un desarrollador de software profesional
 - 📍 Colombia
 
----
-
-## 🛠️ Tecnologías y Herramientas
-
 ### Lenguajes
-https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white
-https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
-https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
-
-### Bases de Datos
-https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white
+java
 
 ### Herramientas
-https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white
-https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
-https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white
-https://img.shields.io/badge/Apache_NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white
+apache
+github
 
 ---
 
@@ -50,13 +38,6 @@ Sitio web responsivo con información personal, historial académico y experienc
 
 **Tecnologías:** HTML, CSS y JavaScript
 
----
-
-## 📈 Estadísticas de GitHub
-
-https://github-readme-stats.vercel.app/api?username=TU_USUARIO&show_icons=true&theme=tokyonight
-
-https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO&layout=compact&theme=tokyonight
 
 ---
 
@@ -70,17 +51,11 @@ https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO&layout
 
 ## 📫 Contacto
 
-📧 Correo: tu_correo@ejemplo.com
+📧 Correo: andres.gelpud00@usc.edu.co
 
-💼 LinkedIn: https://linkedin.com/in/tu-perfil
+🌐 Portafolio Web: este
 
-🌐 Portafolio Web: https://tu-pagina.com
 
----
-
-## ✨ Frase Personal
-
-> "El aprendizaje constante es la clave para convertir ideas en soluciones."
 
 ---
 
