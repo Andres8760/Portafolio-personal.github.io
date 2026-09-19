@@ -1,48 +1,287 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Personal</title>
+
+    <title>Mi Currículum</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Mi Portafolio Personal</h1>
-    </header>
+    <!-- Botones de edición -->
+    <div class="panel-edicion">
 
-    <section class="presentacion">
-        <div class="foto">
-            Foto aquí
-        </div>
+        <button id="botonEditar">
+            ✏️ Editar CV
+        </button>
 
-        <h2>Andres Felipe Gelpud Calvache</h2>
+        <button id="botonGuardar" class="oculto">
+            💾 Guardar cambios
+        </button>
 
-        <p>
-            Bienvenido a mi portafolio personal. En esta página podrás
-            encontrar información sobre mi formación académica y experiencia laboral.
-        </p>
-    </section>
+        <label for="inputFoto" id="botonFoto" class="oculto">
+            🖼️ Cambiar foto
+        </label>
 
-    <section class="academico">
-        <h2>Historial Académico</h2>
+        <input
+            type="file"
+            id="inputFoto"
+            accept="image/*"
+            hidden
+        >
 
-        <ul>
-            <li>Título o estudio 1</li>
-            <li>Título o estudio 2</li>
-            <li>Curso o certificación</li>
-        </ul>
-    </section>
+    </div>
 
-    <section class="laboral">
-        <h2>Historial Laboral</h2>
 
-        <ul>
-            <li>Experiencia laboral 1</li>
-            <li>Experiencia laboral 2</li>
-            <li>Proyecto realizado</li>
-        </ul>
-    </section>
+    <!-- CURRÍCULUM -->
+
+    <div class="cv">
+
+        <header class="encabezado">
+
+            <img
+                src="foto.jpg"
+                alt="Foto de perfil"
+                class="foto"
+                id="fotoPerfil"
+            >
+
+            <div class="datos">
+
+                <h1 class="editable">
+                    Juan Pérez
+                </h1>
+
+                <h2 class="editable">
+                    Ingeniero de Sistemas
+                </h2>
+
+                <p class="editable">
+                    📧 juan@email.com
+                </p>
+
+                <p class="editable">
+                    📱 300 000 0000
+                </p>
+
+                <p class="editable">
+                    📍 Barranquilla, Colombia
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <main>
+
+            <!-- PERFIL -->
+
+            <section>
+
+                <h2>
+                    Perfil Profesional
+                </h2>
+
+                <p class="editable">
+                    Profesional responsable y comprometido, con experiencia
+                    en desarrollo web, programación y soporte de sistemas.
+                    Me caracterizo por mi capacidad para trabajar en equipo,
+                    aprender rápidamente y resolver problemas.
+                </p>
+
+            </section>
+
+
+            <!-- ESTUDIOS -->
+
+            <section>
+
+                <h2>
+                    Historial Académico
+                </h2>
+
+
+                <div class="item">
+
+                    <h3 class="editable">
+                        Ingeniería de Sistemas
+                    </h3>
+
+                    <span class="fecha editable">
+                        2020 - 2025
+                    </span>
+
+                    <p class="editable">
+                        Universidad de Ejemplo
+                    </p>
+
+                    <p class="editable">
+                        Formación en programación, bases de datos,
+                        desarrollo web y redes.
+                    </p>
+
+                </div>
+
+
+                <div class="item">
+
+                    <h3 class="editable">
+                        Bachillerato
+                    </h3>
+
+                    <span class="fecha editable">
+                        2014 - 2019
+                    </span>
+
+                    <p class="editable">
+                        Colegio de Ejemplo
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- EXPERIENCIA -->
+
+            <section>
+
+                <h2>
+                    Experiencia Laboral
+                </h2>
+
+
+                <div class="item">
+
+                    <h3 class="editable">
+                        Desarrollador Web
+                    </h3>
+
+                    <span class="fecha editable">
+                        2024 - Actualidad
+                    </span>
+
+                    <p class="editable">
+                        Empresa ABC
+                    </p>
+
+                    <ul>
+
+                        <li class="editable">
+                            Desarrollo de páginas web.
+                        </li>
+
+                        <li class="editable">
+                            Mantenimiento de aplicaciones.
+                        </li>
+
+                        <li class="editable">
+                            Desarrollo con HTML, CSS y JavaScript.
+                        </li>
+
+                        <li class="editable">
+                            Trabajo en equipo.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="item">
+
+                    <h3 class="editable">
+                        Asistente de Sistemas
+                    </h3>
+
+                    <span class="fecha editable">
+                        2022 - 2024
+                    </span>
+
+                    <p class="editable">
+                        Empresa XYZ
+                    </p>
+
+                    <ul>
+
+                        <li class="editable">
+                            Soporte técnico.
+                        </li>
+
+                        <li class="editable">
+                            Instalación de programas.
+                        </li>
+
+                        <li class="editable">
+                            Mantenimiento de computadores.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+            <!-- HABILIDADES -->
+
+            <section>
+
+                <h2>
+                    Habilidades
+                </h2>
+
+                <div class="habilidades">
+
+                    <span class="editable">
+                        HTML
+                    </span>
+
+                    <span class="editable">
+                        CSS
+                    </span>
+
+                    <span class="editable">
+                        JavaScript
+                    </span>
+
+                    <span class="editable">
+                        Python
+                    </span>
+
+                    <span class="editable">
+                        Trabajo en equipo
+                    </span>
+
+                    <span class="editable">
+                        Comunicación
+                    </span>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+
+            <p class="editable">
+                © 2026 Juan Pérez
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
