@@ -1,4 +1,11 @@
 // ==========================================
+// CONFIGURACIÓN DE ALMACENAMIENTO
+// ==========================================
+
+const CLAVE_ALMACENAMIENTO = "datosCV";
+
+
+// ==========================================
 // ELEMENTOS
 // ==========================================
 
@@ -12,6 +19,59 @@ const fotoPerfil = document.getElementById("fotoPerfil");
 
 const elementosEditables =
     document.querySelectorAll(".editable");
+
+
+// ==========================================
+// CARGAR DATOS GUARDADOS
+// ==========================================
+
+function cargarDatos() {
+
+    const datosGuardados = localStorage.getItem(CLAVE_ALMACENAMIENTO);
+
+    if (!datosGuardados) return;
+
+    const datos = JSON.parse(datosGuardados);
+
+    if (datos.textos) {
+
+        elementosEditables.forEach(function (elemento, index) {
+
+            if (datos.textos[index] !== undefined) {
+                elemento.innerHTML = datos.textos[index];
+            }
+
+        });
+
+    }
+
+    if (datos.foto) {
+        fotoPerfil.src = datos.foto;
+    }
+
+}
+
+
+// ==========================================
+// GUARDAR DATOS EN EL NAVEGADOR
+// ==========================================
+
+function guardarDatos() {
+
+    const textos = [];
+
+    elementosEditables.forEach(function (elemento) {
+        textos.push(elemento.innerHTML);
+    });
+
+    const datos = {
+        textos: textos,
+        foto: fotoPerfil.src
+    };
+
+    localStorage.setItem(CLAVE_ALMACENAMIENTO, JSON.stringify(datos));
+
+}
 
 
 // ==========================================
@@ -62,7 +122,12 @@ botonGuardar.addEventListener("click", function () {
     botonFoto.classList.add("oculto");
 
 
-    alert("✅ Cambios guardados en la página.");
+    // Guardar en localStorage para que persista
+
+    guardarDatos();
+
+
+    alert("✅ Cambios guardados. Se mantendrán aunque cierres o recargues la página.");
 
 });
 
@@ -93,3 +158,10 @@ inputFoto.addEventListener("change", function (evento) {
     }
 
 });
+
+
+// ==========================================
+// CARGAR DATOS AL ABRIR LA PÁGINA
+// ==========================================
+
+cargarDatos();
