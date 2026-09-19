@@ -1,70 +1,318 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Página completa */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9edf2;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Encabezado */
-header {
-    background-color: #1e3a8a;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
 
-/* Secciones */
-section {
-    background-color: white;
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-}
+/* =========================
+   PANEL DE EDICIÓN
+========================= */
 
-/* Presentación */
-.presentacion {
-    text-align: center;
-}
+.panel-edicion {
+    position: fixed;
 
-/* Cuadro para la foto */
-.foto {
-    width: 200px;
-    height: 200px;
-    border: 3px solid #1e3a8a;
-    background-color: #dcdcdc;
-    margin: 20px auto;
+    top: 20px;
+    right: 20px;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
+
+    z-index: 1000;
 }
 
-/* Títulos */
-h2 {
-    color: #1e3a8a;
+.panel-edicion button,
+#botonFoto {
+    background: #17365d;
+    color: white;
+
+    border: none;
+
+    padding: 12px 18px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.panel-edicion button:hover,
+#botonFoto:hover {
+    background: #285a91;
+}
+
+
+/* =========================
+   CURRÍCULUM
+========================= */
+
+.cv {
+    width: 90%;
+    max-width: 950px;
+
+    margin: 80px auto 40px;
+
+    background: white;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.encabezado {
+    background: #17365d;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 40px;
+
+    gap: 35px;
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.foto {
+    width: 160px;
+    height: 160px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid white;
+}
+
+
+/* =========================
+   DATOS
+========================= */
+
+.datos h1 {
+    font-size: 40px;
+
+    margin-bottom: 5px;
+}
+
+.datos h2 {
+    font-size: 22px;
+
+    font-weight: normal;
+
     margin-bottom: 15px;
 }
 
-/* Listas */
+.datos p {
+    margin: 5px 0;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+main {
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+section > h2 {
+    color: #17365d;
+
+    border-bottom: 3px solid #17365d;
+
+    padding-bottom: 8px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   ESTUDIOS Y EXPERIENCIA
+========================= */
+
+.item {
+    margin-bottom: 25px;
+
+    padding-left: 15px;
+
+    border-left: 4px solid #17365d;
+}
+
+.item h3 {
+    color: #222;
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.fecha {
+    color: #777;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.item p {
+    margin-top: 5px;
+}
+
+
+/* =========================
+   LISTAS
+========================= */
+
 ul {
-    padding-left: 20px;
+    margin-top: 10px;
+
+    margin-left: 25px;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-/* Pie de página */
-footer {
-    background-color: #1e3a8a;
+
+/* =========================
+   HABILIDADES
+========================= */
+
+.habilidades {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.habilidades span {
+    background: #17365d;
+
     color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MODO EDICIÓN
+========================= */
+
+.editando {
+    outline: 2px dashed #3498db;
+
+    outline-offset: 4px;
+
+    background: #f0f8ff;
+
+    color: #222;
+
+    cursor: text;
+}
+
+
+/* =========================
+   BOTONES OCULTOS
+========================= */
+
+.oculto {
+    display: none !important;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #17365d;
+
+    color: white;
+
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    .panel-edicion {
+        position: relative;
+
+        top: 0;
+        right: 0;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        padding: 15px;
+    }
+
+    .cv {
+        width: 100%;
+
+        margin: 0;
+    }
+
+    .encabezado {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+    .foto {
+        width: 130px;
+        height: 130px;
+    }
+
+    .datos h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 25px;
+    }
 }
