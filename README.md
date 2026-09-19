@@ -13,7 +13,7 @@
 - 📍 Colombia
 
 ### Lenguajes
-java
+java, C++, Html
 
 ### Herramientas
 apache
