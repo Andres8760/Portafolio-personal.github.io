@@ -1,4 +1,4 @@
-# 👨‍💻 Andrés Felipe Gelpud Calvache
+#  Andrés Felipe Gelpud Calvache
 
 ¡Hola! soy Andres y soy desarrollador en formación de tecnología, el desarrollo web, la programación y el aprendizaje continuo.
 
